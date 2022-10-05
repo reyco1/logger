@@ -1,0 +1,45 @@
+{
+  "name": "@reyco1/logger",
+  "version": "0.0.0",
+  "description": "Logger is a utility that allows you to log to the console in a clear an concise manner as well as optionally saving all your logs to a file.",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf ./dist && npx tsc -p tsconfig.json && cp package.json ./dist/package.json",
+    "tsc": "./node_modules/typescript/bin/tsc",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reyco1/logger.git"
+  },
+  "keywords": [
+    "logger",
+    "log",
+    "console",
+    "file",
+    "console logger",
+    "file logger",
+    "log to file",
+    "log to console",
+    "log to file and console",
+    "log to file and console at the same time"
+  ],
+  "author": "Rey Columna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reyco1/logger/issues"
+  },
+  "homepage": "https://github.com/reyco1/logger#readme",
+  "dependencies": {
+    "chalk": "^5.1.0",
+    "luxon": "^3.0.4",
+    "stacktrace-js": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/luxon": "^3.0.1",
+    "@types/stacktrace-js": "^2.0.3",
+    "typescript": "^4.8.4"
+  }
+}
